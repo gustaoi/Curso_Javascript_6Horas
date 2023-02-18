@@ -7,5 +7,5 @@ document
 .innerHTML = 'xxxxxxxxx xxxxxxx';
 
 function exdeFuncao() {
-    
+    Document.write(5 + 5)
 }
