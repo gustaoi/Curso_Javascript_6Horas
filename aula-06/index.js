@@ -58,5 +58,15 @@ let x = 10; // aqui é 10
 
 //* window.document.querySelector('#texto').innerHTML = x;
 
-// Já o const é 
+// Já o const ele não recebe outro valor ele é constante
+
+// sempre vai ser 10
+const z = 10;
+
+//const z = 5;
+
+{
+    const z = 2;
+}
+
 
