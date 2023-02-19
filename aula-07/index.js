@@ -11,12 +11,15 @@ Aprendeno Operadores
 São Usados os Sinais: + - * / = == === ++ -- += -= && || ! ...
 */
 
-var num1, num2, soma, sub, multi, divi;
+// 1) Operadores Aritméticos
+
+var num1, num2, soma, sub, multi, incremento;
 
 num1 = 10;
 num2 = 20;
 
 // Somente para numbers
+
 soma = num1 + num2;
 // alert(soma) / 30
 
@@ -28,3 +31,12 @@ multi = num1 * num2;
 
 divi = num2 / num1;
 // alert(divi) / 2 
+
+// Incremento
+
+// alert(num1) / 10
+
+incremento = ++num1; // incremento = --num1;
+alert('O incremento adiciona o valor + 1 e salva na base: ' + num1)
+
+// alert(num1) / Passa a ser  11
