@@ -87,3 +87,32 @@ test1 = 50;
 test2 = 20;
 total = (test1 > test2) // ( > ) Quer saber se o test1 é maior que o test2. ( < ) Quer saber se é menor. já o ( >= <= ) maior ou igual / menor ou igual 
 // alert(total) / true
+
+
+// 5) Operador Condicional (Ternário) ( condition ? expr1-false : expr2-true )
+
+var idade, eleitor, resultado;
+
+idade=19;
+eleitor=(idade < 18) ? 'Não é eleitor' : 'é eleitor';
+// alert(eleitor) / true 'é eleitor'
+
+// 6) Operadores Lógicos ( &&-e  ||-ou  !-Contrário )
+
+// && - e
+idade=65;
+resultado= (idade > 60 && idade < 70 ); // Quer saber se idade é maior que 60 e(&&) menor que 70.
+// alert(resultado) / true - 65 é maior que 60 e menor que 70
+
+
+// || - ou
+idade=60;
+resultado= (idade === 60 || idade === 70) // Quer saber se idade tem exatamente 60 ou(||) exatamente 70.
+// alert(resultado) / true - idade é exatamente igual a 60.
+
+
+// ! - Contrário
+idade=60;
+resultado= !(idade === 60) // Irá fazer o inverso da operação 60 é igual(true) porém a exclamação ! ira inverter para (false)
+// alert(resultado) // false - inverso da operação
+
