@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,8 +9,10 @@
 
     <style>
         html {
-            font-size: 62,5%; /* 100% = 16px / 62,5% = 10px */
+            font-size: 62, 5%;
+            /* 100% = 16px / 62,5% = 10px */
         }
+
         body {
             background-color: lightgray;
 
@@ -17,6 +20,8 @@
 
             text-align: center;
             font-size: 1.5rem;
+
+            height: 90vh;
         }
 
         button {
@@ -36,20 +41,46 @@
         button:active {
             background-color: rgb(42, 204, 196);
         }
+
+        div#box {
+            margin: 20px auto ;
+            width: 80%;
+            height: 200px;
+            background-color: lightseagreen;
+            border: 1px solid black;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        input#itexto {
+            padding: 30px;
+            font-size: 1rem;
+        }
     </style>
 </head>
-<body>
+
+<body onload="carregar()" onresize="tamanho()">
     <h1>Aprendendo Javascript</h1>
 
     <p id="text">
 
     </p>
 
-    <button onclick="alertHello()">
+    <p id="text2"></p>
+
+    <button onclick="clique()" ondblclick="doisClique()">
         Clique aqui
     </button>
+
+    <div id="box" onmouseover="sobre()" onmouseout="saiu()" onmousemove="mover()" onmousedown="pressionou()" onmouseup="soltou()"></div>
+
+    <label for="itexto">Teste events de input: </label>
+    <input onfocus="foco()" onchange="mudar()" onblur="semFoco()" onkeypress="teclaPressionada()" onkeyup="solta()" type="text" name="texto" id="itexto" placeholder="digite alguma coisa">
 
 
     <script src="/aula-10-events/index.js"></script>
 </body>
+
 </html>
