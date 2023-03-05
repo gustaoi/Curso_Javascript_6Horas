@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendendo Javascript</title>
+
+    <style>
+        html {
+            font-size: 62,5%; /* 100% = 16px / 62,5% = 10px */
+        }
+        body {
+            background-color: lightgray;
+
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+            text-align: center;
+            font-size: 1.5rem;
+        }
+
+        button {
+            padding: .5rem 1rem;
+
+            background-color: lightskyblue;
+
+            border: 2px solid black;
+        }
+
+        button:hover {
+            background-color: lightseagreen;
+
+            cursor: pointer;
+        }
+
+        button:active {
+            background-color: rgb(42, 204, 196);
+        }
+    </style>
+</head>
+<body>
+    <h1>Aprendendo Javascript</h1>
+
+    <p id="text">    </p>
+
+    <select name="ano" id="iano" style="width: 300px; height: 50px;">
+        <option selected disabled>Selecione o Ano</option>
+    </select>
+
+    <p id="text1"></p>
+
+    <p id="text2"></p>
+
+    <button onclick="alertHello()">
+        Clique aqui
+    </button>
+
+
+    <script src="/aula-15-for/index.js"></script>
+</body>
+</html>
