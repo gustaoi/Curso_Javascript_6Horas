@@ -21,4 +21,16 @@ console.log(lista)
 
 const pessoa = ['joão', 'gustavo', 20] // array ou matriz
 
-const pessoa = {nome:'joão', sobrenome:'Gustavo', idade:20} // objetos
+const pessoa1 = {nome:'joão', sobrenome:'Gustavo', idade:20} // objetos
+
+// Descobrir se uma variavel é um array 
+
+Array.isArray(pessoa); // return true or false
+
+// Métodos para arrays
+
+pessoa.pop(); // remove o ultimo dado do array 
+pessoa.shift(); // remove o promeiro dado do array
+pessoa.push('adcionei com push'); // adciona um dado novo
+
+document.getElementById('text').innerHTML = pessoa.join(' | ');
